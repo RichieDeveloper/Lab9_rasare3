@@ -23,15 +23,16 @@ const int WITHDRAWAL = 2;
 const int CLOSE_OF_BUSINESS = 3;
 const int QUIT = 4;
 
+
+ 	/**
+    * @brief Runs the savings account banking program.
+	* @return 0 on successful completion.
+    */
 int main()
 {
     // just use dummy data for now for the customer and the account
     // we care about interacting with account object for this lab
 
-    /**
-    * @brief Runs the savings account banking program.
-	* @return 0 on successful completion.
-    */
     Customer customer("0123456789", "customer@cscc.edu");
     Account* account = new SavingsAccount("5423678409", 100.00, customer, 0.005);
     account->printAccountInfo();
